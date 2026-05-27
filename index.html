@@ -1,10 +1,70 @@
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-.cs{max-width:680px;padding:2rem 0;font-family:var(--font-sans)}
-.kicker{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:6px}
-.headline{font-size:20px;font-weight:500;color:var(--color-text-primary);line-height:1.3;margin-bottom:8px}
-.subline{font-size:13px;color:var(--color-text-secondary);line-height:1.6;margin-bottom:1rem}
+html{
+  background:#0B0B0B;
+}
+
+body{
+  background:#000;
+  margin:0;
+  display:flex;
+  justify-content:center;
+  color:#F5F5F5;
+  font-family:Inter,Segoe UI,Arial,sans-serif;
+}
+.cs{
+  width:100%;
+  max-width:920px;
+  padding:48px 40px;
+  margin:0 auto;
+}
+.headline{
+  font-size:42px;
+  line-height:1.2;
+  font-weight:700;
+  color:#FFFFFF;
+}
+
+.subline{
+  font-size:18px;
+  line-height:1.7;
+  color:#CFCFCF;
+}
+
+..chain-sub,
+.temp-label,
+.stat-label,
+.footer{
+  color:#D0D0D0 !important;
+  line-height:1.7;
+}
+
+.chain-title,
+.plat-name,
+{
+  color:#FFFFFF !important;
+}
+.kicker{
+  color:#A8A8A8;
+}
+
+.author{
+  font-size:13px;
+  color:#9CA3AF;
+  margin-top:18px;
+  margin-bottom:24px;
+  letter-spacing:0.02em;
+}
+
+.kicker{
+  font-size:11px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--color-text-tertiary);
+  margin-bottom:6px
+}
+
 .byline{display:flex;flex-wrap:wrap;gap:12px;font-size:11px;color:var(--color-text-tertiary);border-top:.5px solid var(--color-border-tertiary);border-bottom:.5px solid var(--color-border-tertiary);padding:8px 0;margin-bottom:1.5rem}
 .sec{font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;color:var(--color-text-tertiary);margin-bottom:10px;margin-top:1.5rem}
 .divider{border:none;border-top:.5px solid var(--color-border-tertiary);margin:1.5rem 0}
@@ -75,25 +135,61 @@
 .opp-num{font-size:20px;font-weight:500;margin-bottom:4px}
 .opp-title{font-size:11px;font-weight:500;margin-bottom:5px}
 .opp-body{font-size:10px;line-height:1.5}
-.o-teal{background:#E1F5EE}.o-teal .opp-num,.o-teal .opp-title{color:#0F6E56}.o-teal .opp-body{color:#1D9E75}
-.o-purple{background:#EEEDFE}.o-purple .opp-num,.o-purple .opp-title{color:#534AB7}.o-purple .opp-body{color:#7F77DD}
-.o-amber{background:#FAEEDA}.o-amber .opp-num,.o-amber .opp-title{color:#854F0B}.o-amber .opp-body{color:#BA7517}
+.o-teal{
+  background:#E1F5EE;
+}
+
+.o-purple{
+  background:#EEEDFE;
+}
+
+.o-amber{
+  background:#FAEEDA;
+}
+
+.o-teal .opp-num,
+.o-teal .opp-title{
+  color:#047857;
+}
+
+.o-purple .opp-num,
+.o-purple .opp-title{
+  color:#4338CA;
+}
+
+.o-amber .opp-num,
+.o-amber .opp-title{
+  color:#B45309;
+}
+
+.o-teal .opp-body,
+.o-purple .opp-body,
+.o-amber .opp-body{
+  color:#374151;
+  font-weight:500;
+  line-height:1.7;
+}
 
 .source-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
 .source-tag{font-size:10px;padding:2px 8px;border-radius:4px;background:var(--color-background-secondary);color:var(--color-text-tertiary)}
 .footer{font-size:11px;color:var(--color-text-tertiary);border-top:.5px solid var(--color-border-tertiary);padding-top:12px;line-height:1.6}
 </style>
-
 <div class="cs">
   <p class="kicker">Independent Case Study · Amazon Beauty India · May 2026</p>
-  <h1 class="headline">Amazon India is growing premium beauty 1.5× YoY — and still losing the trust war</h1>
-  <p class="subline">How ingredient instability, warehouse temperature mismatch, and the absence of beauty-specific procurement controls are costing Amazon millions in refunds, clinic-driven churn, and long-term repeat loss in a ₹56,000 Cr. market.</p>
-  <div class="byline">
-    <span><i class="ti ti-flask" aria-hidden="true"></i> Cosmetic ingredient analyst</span>
-    <span><i class="ti ti-temperature" aria-hidden="true"></i> Beauty storage & formulation research</span>
-    <span><i class="ti ti-trending-up" aria-hidden="true"></i> Buying, planning & instock focus</span>
-    <span><i class="ti ti-users" aria-hidden="true"></i> Indian skincare consumer community</span>
+
+  <h1 class="headline">
+    <strong>Amazon India is growing premium beauty 1.5× YoY — and still losing the trust war</strong>
+  </h1>
+
+  <p class="subline">
+    How ingredient instability, warehouse temperature mismatch, and the absence of beauty-specific procurement controls are costing Amazon millions in refunds, clinic-driven churn, and long-term repeat loss in a ₹56,000 Cr. market.
+  </p>
+
+  <div class="author">
+    By Aishwarya Sivakumar · Independent Beauty Category Research
   </div>
+
+  <div class="byline">
 
   <p class="sec">Market context</p>
   <div class="stat-row">
