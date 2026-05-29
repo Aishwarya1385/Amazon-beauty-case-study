@@ -15,7 +15,7 @@ body{
 }
 .cs{
   width:100%;
-  max-width:920px;
+  max-width:1100px;
   padding:48px 40px;
   margin:0 auto;
 }
@@ -32,7 +32,7 @@ body{
   color:#CFCFCF;
 }
 
-..chain-sub,
+.chain-sub,
 .temp-label,
 .stat-label,
 .footer{
@@ -41,7 +41,7 @@ body{
 }
 
 .chain-title,
-.plat-name,
+.plat-name
 {
   color:#FFFFFF !important;
 }
@@ -68,10 +68,16 @@ body{
 .byline{display:flex;flex-wrap:wrap;gap:12px;font-size:11px;color:var(--color-text-tertiary);border-top:.5px solid var(--color-border-tertiary);border-bottom:.5px solid var(--color-border-tertiary);padding:8px 0;margin-bottom:1.5rem}
 .sec{font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;color:var(--color-text-tertiary);margin-bottom:10px;margin-top:1.5rem}
 .divider{border:none;border-top:.5px solid var(--color-border-tertiary);margin:1.5rem 0}
-.stat-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:1.5rem}
+.stat-row{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-bottom:1.5rem
+}
 .stat{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:12px}
 .stat-num{font-size:20px;font-weight:500;margin-bottom:2px}
-.stat-label{font-size:10px;color:var(--color-text-secondary);line-height:1.4}
+.stat-label{font-size:12px;
+line-height:1.6;color:var(--color-text-secondary);line-height:1.6}
 .s-purple .stat-num{color:#534AB7}.s-teal .stat-num{color:#0F6E56}.s-coral .stat-num{color:#993C1D}.s-amber .stat-num{color:#854F0B}
 .badge{font-size:10px;padding:2px 7px;border-radius:20px;font-weight:500;display:inline-block}
 .b-red{background:#FCEBEB;color:#A32D2D}.b-green{background:#EAF3DE;color:#3B6D11}.b-amber{background:#FAEEDA;color:#854F0B}
@@ -88,7 +94,7 @@ body{
 .chain-line{width:1px;height:20px;margin-left:13px;background:var(--color-border-secondary)}
 .chain-body{padding-bottom:4px}
 .chain-title{font-size:12px;font-weight:500;color:var(--color-text-primary);margin-bottom:2px}
-.chain-sub{font-size:11px;color:var(--color-text-secondary);line-height:1.5}
+.chain-sub{font-size:12px;color:var(--color-text-secondary);line-height:1.7}
 .chain-cost{font-size:11px;font-weight:500;margin-top:3px}
 .cd1 .chain-dot{background:#FAEEDA;color:#854F0B}
 .cd2 .chain-dot{background:#FAECE7;color:#993C1D}
@@ -96,11 +102,17 @@ body{
 .cd4 .chain-dot{background:#7F77DD;color:#fff}
 .cd5 .chain-dot{background:#534AB7;color:#fff}
 
-.temp-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:1.5rem}
+.temp-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:14px;
+margin-bottom:1.5rem
+}
 .temp-card{border:.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:11px;background:var(--color-background-primary)}
 .temp-country{font-size:10px;font-weight:500;color:var(--color-text-tertiary);margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em}
 .temp-deg{font-size:18px;font-weight:500;margin-bottom:2px}
-.temp-label{font-size:10px;color:var(--color-text-secondary);line-height:1.4}
+.temp-label{font-size:12px;
+line-height:1.6;color:var(--color-text-secondary);line-height:1.6}
 .temp-risk{font-size:10px;margin-top:5px;padding:2px 6px;border-radius:4px;display:inline-block}
 .risk-ok{background:#EAF3DE;color:#3B6D11}.risk-warn{background:#FAEEDA;color:#854F0B}.risk-bad{background:#FCEBEB;color:#A32D2D}
 
@@ -134,7 +146,7 @@ body{
 .opp-card{border-radius:var(--border-radius-md);padding:13px}
 .opp-num{font-size:20px;font-weight:500;margin-bottom:4px}
 .opp-title{font-size:11px;font-weight:500;margin-bottom:5px}
-.opp-body{font-size:10px;line-height:1.5}
+.opp-body{font-size:12px;line-height:1.7}
 .o-teal{
   background:#E1F5EE;
 }
@@ -173,6 +185,33 @@ body{
 .source-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
 .source-tag{font-size:10px;padding:2px 8px;border-radius:4px;background:var(--color-background-secondary);color:var(--color-text-tertiary)}
 .footer{font-size:11px;color:var(--color-text-tertiary);border-top:.5px solid var(--color-border-tertiary);padding-top:12px;line-height:1.6}
+  @media (max-width:768px){
+
+  .cs{
+    padding:24px 16px;
+  }
+
+  .headline{
+    font-size:32px;
+  }
+
+  .subline{
+    font-size:16px;
+  }
+
+  .stat-row,
+  .temp-grid,
+  .nykaa-steps,
+  .opp-grid{
+    grid-template-columns:1fr;
+  }
+
+  .plat-label-row{
+    flex-direction:column;
+    gap:6px;
+  }
+}
+
 </style>
 <div class="cs">
   <p class="kicker">Independent Case Study · Amazon Beauty India · May 2026</p>
@@ -361,3 +400,4 @@ body{
   </div>
   <p class="footer">Prepared independently as part of an application for the Brand Manager, Beauty & Personal Care role at Amazon India. The author combines cosmetic ingredient expertise, deep knowledge of Indian skincare consumer behaviour, and an operational lens on buying, planning, and instock management in beauty — including procurement-level controls like minimum shelf life thresholds, FEFO rotation, and vendor compliance frameworks.</p>
 </div>
+  
